@@ -43,3 +43,7 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#Another
+lib/data/data_sourse/data_source_program_lang.dart
+
