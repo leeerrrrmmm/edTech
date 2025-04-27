@@ -1,0 +1,66 @@
+{
+    "text_title": "Text Title",
+    "goodbye": "Goodbye",
+    "openSettings": "Open Settings",
+    "intro_title1" : "Learn anytime\nand anywhere",
+    "description_intro1" : "Quarantine is the perfect time to spend your\nday learning something new, from anywhere!",
+    "intro_title2" : "  Find a course\nfor you",
+    "description_intro2" : "Quarantine is the perfect time to spend your\nday learning something new, from anywhere!",
+    "intro_title3" : "Improve uour skills",
+    "description_intro3" : "Quarantine is the perfect time to spend your\nday learning something new, from anywhere!",
+    "sign_up": "Sign up",
+    "log_in": "Log in",
+    "email": "Email",
+    "name": "Name",
+    "pass": "Password",
+    "create_account" : "Create your account",
+    "log_with_social": "Login with social networks",
+    "forgot_pass" : "Forgot password?",
+    "finish": "Finish",
+    "next": "Next",
+    "skip": "Skip",
+    "profile": "Profile",
+    "your_courses": "Your Courses",
+    "saved" : "Saved",
+    "payment" : "Payment",
+    "logout" : "Log out",
+    "notification" : "Notifications",
+    "account_information" : "Account information",
+    "language" : "Language",
+    "settings" : "Settings",
+    "course_not_saved" : "Course not saved",
+    "try_save_the_course": "Try save the course\nagain in a few minutes",
+    "continues" : "Continue",
+    "no_payment_method": "No payment method",
+    "you_dont_have_any_payment" : "You don't have any\npayment method",
+    "still_no_your_courses" : "Still no your courses",
+    "click_on_the_btn_for_the_find_a_new_courses" : "Click on the button below\nto go to the course selection screen",
+    "about_the_course" : "About the course",
+    "duration" : "Duration",
+    "course_not_found" : "Course not found",
+    "try_search_with_a_diff_keyword" : "Try searching the course with\na different keyword",
+
+
+    
+    "dart_name": "Dart",
+    "dart_description": "Language for Flutter",
+    "dart_about": "You will learn about the Dart programming language, understand the basics and OOP, complete a couple of small projects, and after the course, you can move on to the Flutter course.",
+    
+    "python_name": "Python",
+    "python_description": "Popular programming language",
+    "python_about": "The course will include informative video lessons and quizzes on the Python programming language. You will be able to start your journey as a Python developer.",
+    
+    "js_name": "JavaScript",
+    "js_description": "Language used for back-end web development",
+    "js_about": "The course will include educational and fun lessons and quizzes. By the end, you will know where to go next. Buying the premium version unlocks advanced content and increases your chances of getting your first offer.",
+    
+    "flutter_name": "Flutter",
+    "flutter_description": "Flutter enables developers to create beautiful, fast, and native apps for iOS, Android, Web, and Desktop.",
+    "flutter_about": "A course from Google on Flutter, which interacts with Dart. You'll learn to build apps for mobile, Windows/Mac/Linux/Web, create projects like a TO-DO list, mini-shop, and an app that fetches movies/series via API."
+
+
+
+
+
+
+  }
