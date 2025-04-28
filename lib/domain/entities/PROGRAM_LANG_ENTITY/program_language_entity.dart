@@ -1,11 +1,12 @@
 import 'package:course_ed_tech/domain/entities/LESSON_ENTITY/lessons_entity.dart';
 import 'package:course_ed_tech/domain/entities/QUIZ_ENTITY/quiz_entity.dart';
+import 'package:equatable/equatable.dart';
 import 'package:hive/hive.dart';
 
 part 'program_language_entity.g.dart';
 
 @HiveType(typeId: 0)
-class ProgramLanguageEntity {
+class ProgramLanguageEntity extends Equatable {
   @HiveField(0)
   final int id;
   @HiveField(1)
@@ -36,4 +37,16 @@ class ProgramLanguageEntity {
     required this.lessons,
     required this.quizes,
   });
+  @override
+  List<Object?> get props => [
+    id,
+    name,
+    description,
+    imgPath,
+    courseTime,
+    aboutTheCourse,
+    price,
+    lessons,
+    quizes,
+  ];
 }

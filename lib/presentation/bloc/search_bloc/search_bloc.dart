@@ -1,8 +1,10 @@
 import 'package:course_ed_tech/domain/entities/PROGRAM_LANG_ENTITY/program_language_entity.dart';
+import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'search_event.dart';
+
 part 'search_state.dart';
 
 class SearchBloc extends Bloc<SearchEvent, SearchState> {
