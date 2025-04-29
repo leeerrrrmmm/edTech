@@ -19,7 +19,6 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   font_awesome_flutter: ^10.8.0
-  freezed_annotation: ^2.4.4
   google_sign_in: ^6.3.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
@@ -27,6 +26,7 @@ dependencies:
   path_provider: ^2.1.5
   provider: ^6.1.4
   shared_preferences: ^2.5.3
+  u_credit_card: ^1.4.0
 
 dev_dependencies:
   mockito: ^5.4.5

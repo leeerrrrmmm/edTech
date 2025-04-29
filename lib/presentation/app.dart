@@ -1,4 +1,5 @@
 import 'package:course_ed_tech/presentation/screens/BOTTOM/botton_nav_bar.dart';
+import 'package:course_ed_tech/presentation/screens/PROFILE/profile_screens/payment_screens/add_card_to_pay.dart';
 // import 'package:course_ed_tech/presentation/screens/SPLASH/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

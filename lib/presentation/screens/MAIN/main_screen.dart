@@ -23,35 +23,38 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: BlocBuilder<SearchBloc, SearchState>(
-            builder: (context, state) {
-              if (state is LoadSearchedCourses) {
-                return _buildMainContent(
-                  context,
-                  courses: state.loadFindedCourses,
-                );
-              } else {
-                return FutureBuilder<List<ProgramLanguageEntity>>(
-                  future: getLanguagesUseCase(),
-                  builder: (context, snapshot) {
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Center(child: CircularProgressIndicator());
-                    }
-                    if (snapshot.hasError) {
-                      return const Center(
-                        child: Text('Ошибка загрузки данных'),
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
+        child: SafeArea(
+          child: SingleChildScrollView(
+            child: BlocBuilder<SearchBloc, SearchState>(
+              builder: (context, state) {
+                if (state is LoadSearchedCourses) {
+                  return _buildMainContent(
+                    context,
+                    courses: state.loadFindedCourses,
+                  );
+                } else {
+                  return FutureBuilder<List<ProgramLanguageEntity>>(
+                    future: getLanguagesUseCase(),
+                    builder: (context, snapshot) {
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const Center(child: CircularProgressIndicator());
+                      }
+                      if (snapshot.hasError) {
+                        return const Center(
+                          child: Text('Ошибка загрузки данных'),
+                        );
+                      }
+                      return _buildMainContent(
+                        context,
+                        courses: snapshot.data ?? [],
                       );
-                    }
-                    return _buildMainContent(
-                      context,
-                      courses: snapshot.data ?? [],
-                    );
-                  },
-                );
-              }
-            },
+                    },
+                  );
+                }
+              },
+            ),
           ),
         ),
       ),

@@ -2,6 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GIDClientID</key>
+	<string>794448787877-or8uc9o97j1e1helhjklic21a2s1qogj.apps.googleusercontent.com</string>
+	<!-- Put me in the [my_project]/ios/Runner/Info.plist file -->
+	<!-- Google Sign-in Section -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<!-- TODO Replace this value: -->
+				<!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
+				<string>com.googleusercontent.apps.794448787877-or8uc9o97j1e1helhjklic21a2s1qogj</string>
+			</array>
+		</dict>
+	</array>
+	<!-- End of the Google Sign-in Section -->
+	<key>keychain-access-groups</key>
+	<array>
+	<string>$(AppIdentifierPrefix)com.google.GIDSignIn</string>
+	</array>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>We need access to your local network for communication.</string>
 	<key>CFBundleDevelopmentRegion</key>
